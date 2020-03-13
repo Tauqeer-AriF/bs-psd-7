@@ -1,0 +1,95 @@
+
+
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+#navbar{
+    font-family: 'Poppins-Medium';
+}
+.carousel-inner h1{
+    font-family: 'Poppins-Black';
+}
+.carousel-inner p{
+    font-family: 'Poppins-Regular';
+}
+#tin{
+    font-family: 'Poppins-Black';
+}
+#navbar,#slider,#submit{
+    background-color: #fcdb00;
+}
+.fa-facebook,.fa-twitter,.fa-google,.fa-linkedin{
+    background-color: #fcdb00;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: black;
+    padding-top: 5px;
+    margin-left: 20px;
+}
+#keep{
+    color: #fcdb00;
+    font-family: Poppins-Black;
+}
+#apple{
+    transition: width 2s, height 2s, transform 2s;
+}
+#apple:hover{
+    transform: rotate(180deg);
+}
+#para{
+    transition: transform 1s;
+}
+#para:hover{
+    background-color: #fcdb00;
+    box-shadow: 1px 1px 10px 10px #bbb;
+    transform: scale(1.1);
+}
+#slider-img{
+    transition: transform 2s ease-in-out;
+}
+#slider-img:hover{
+    transform: scale(-1.0);
+}
+#rot{
+    transition: transform 0.5s;
+}
+#rot:hover{
+    transform: rotate(20deg);
+    color: white;
+}
+#submit:hover{
+    background-color: black;
+    color:#fcdb00 ;
+}
+footer{
+    background-color: #000000;
+    color: white;
+}
+input{
+    height: 40px;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+}
