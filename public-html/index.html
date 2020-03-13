@@ -50,9 +50,9 @@
             <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
               Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit </p>
             <p class="mt-5">
-              <i class="fa fa-apple mr-4"  style="font-size: 40px" aria-hidden="true"></i>
-              <i class="fa fa-android mr-4" style="font-size: 40px" aria-hidden="true"></i>
-              <i class="fa fa-windows mr-4" style="font-size: 40px" aria-hidden="true"></i>
+              <i class="fa fa-apple mr-4"  style="font-size: 40px" aria-hidden="true" id="ap"></i>
+              <i class="fa fa-android mr-4" style="font-size: 40px" aria-hidden="true" id="ap"></i>
+              <i class="fa fa-windows mr-4" style="font-size: 40px" aria-hidden="true" id="ap"></i>
             </p>
           </div>
           <div class="col-lg-6 ">
@@ -68,9 +68,9 @@
             <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
               Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit </p>
             <p class="mt-5">
-              <i class="fa fa-apple mr-4" style="font-size: 40px" aria-hidden="true"></i>
-              <i class="fa fa-android mr-4" style="font-size: 40px" aria-hidden="true"></i>
-              <i class="fa fa-windows mr-4" style="font-size: 40px" aria-hidden="true"></i>
+              <i class="fa fa-apple mr-4" style="font-size: 40px" aria-hidden="true" id="ap"></i>
+              <i class="fa fa-android mr-4" style="font-size: 40px" aria-hidden="true" id="ap"></i>
+              <i class="fa fa-windows mr-4" style="font-size: 40px" aria-hidden="true" id="ap"></i>
             </p>
           </div>
           <div class="col-lg-6">
@@ -86,9 +86,9 @@
             <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
               Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit </p>
             <p class="mt-5">
-              <i class="fa fa-apple mr-4" style="font-size: 40px" aria-hidden="true"></i>
-              <i class="fa fa-android mr-4" style="font-size: 40px" aria-hidden="true"></i>
-              <i class="fa fa-windows mr-4" style="font-size: 40px" aria-hidden="true"></i>
+              <i class="fa fa-apple mr-4" style="font-size: 40px" aria-hidden="true" id="ap"></i>
+              <i class="fa fa-android mr-4" style="font-size: 40px" aria-hidden="true" id="ap"></i>
+              <i class="fa fa-windows mr-4" style="font-size: 40px" aria-hidden="true" id="ap"></i>
             </p>
           </div>
           <div class="col-lg-6">
@@ -101,7 +101,11 @@
 </div>
 </div>
 
-
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 
 
 
@@ -232,7 +236,28 @@
 
 
 
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
 
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("slider-img");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
 <script type="text/javascript" src="bootstrap js/bootstrap.min.js"></script>
 </body>
 </html>
